@@ -1,0 +1,14 @@
+<Vehiculo>
+<Moto placa= "ABC-123"></Moto>
+<Moto marca= "AKT"></Moto>
+<Moto valorPeaje= "0"></Moto>
+<Automovil placa= "HIJ-324"></Automovil>
+<Automovil marca= "Toyota"></Automovil>
+<Automovil valorPeaje= "5000"></Automovil>
+<Camion1eje placa= "DEF-456""></Camion1eje>
+<Camion1eje marca= "FOTON"></Camion1eje>
+<Camion1eje valorPeaje= "10000"></Camion1eje>
+<Camionmasdedosejes placa= "ASD-543"></Camionmasdedosejes>
+<Camionmasdedosejes marca= "Honda"></Camionmasdedosejes>
+<Camionmasdedosejes valorPeaje= "15000"></Camionmasdedosejes>
+</Vehiculo>
