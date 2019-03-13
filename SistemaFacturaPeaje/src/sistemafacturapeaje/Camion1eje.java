@@ -14,5 +14,4 @@ public class Camion1eje extends Vehiculo {
     public Camion1eje(String placa, String marca, int valorPeaje) {
         super(placa, marca, valorPeaje);
     }
-    
 }

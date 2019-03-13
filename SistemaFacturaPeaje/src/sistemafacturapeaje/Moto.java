@@ -14,5 +14,5 @@ public class Moto extends Vehiculo {
     public Moto(String placa, String marca, int valorPeaje) {
         super(placa, marca, valorPeaje);
     }
-      
+    
 }

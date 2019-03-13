@@ -15,5 +15,4 @@ public class Camionmasde2ejes extends Vehiculo{
         super(placa, marca, valorPeaje);    
     } 
     
-    
 }

@@ -15,5 +15,4 @@ public class Automovil extends Vehiculo {
         super(placa, marca, valorPeaje);
     }
     
-    
 }

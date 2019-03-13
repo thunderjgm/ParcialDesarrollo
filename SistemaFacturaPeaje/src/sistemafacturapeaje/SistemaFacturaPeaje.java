@@ -5,7 +5,9 @@
  */
 package sistemafacturapeaje;
 
+import static java.lang.System.console;
 import java.util.ArrayList;
+import static java.util.Collections.list;
 import java.util.Scanner;
 
 /**
@@ -19,18 +21,22 @@ public class SistemaFacturaPeaje {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner scan= new Scanner(System.in);        
+        Scanner scan= new Scanner(System.in);
+        ArrayList<Vehiculo> listaVehiculos= new ArrayList<Vehiculo>();
         
         Vehiculo moto = new Moto("ABC-123", "AKT", 0);
         Vehiculo automovil = new Automovil("HIJ-324", "Toyota", 5000);
         Vehiculo camion = new Camion1eje("DEF-456", "FOTON", 10000);
         Vehiculo camionVariosejes = new Camionmasde2ejes("ASD-543", "Honda", 15000);
-        
-        System.out.println("El valor de peaje de la moto "+moto.getMarca()+" con placa "+moto.getPlaca()+" es: "+moto.getValorPeaje());
-        System.out.println("El valor de peaje del automovil "+automovil.getMarca()+" con placa "+automovil.getPlaca()+" es: "+automovil.getValorPeaje());
-        System.out.println("El valor de peaje del camion de un eje "+camion.getMarca()+" con placa "+camion.getPlaca()+" es: "+camion.getValorPeaje());
-        System.out.println("El valor de peaje del camion de mas de 2 ejes "+camionVariosejes.getMarca()+" con placa "+camionVariosejes.getPlaca()+" es: "+camionVariosejes.getValorPeaje());
        
+        listaVehiculos.add(moto);
+        listaVehiculos.add(automovil);
+        listaVehiculos.add(camion);
+        listaVehiculos.add(camionVariosejes);
+        
+        for (Vehiculo listaVehiculo : listaVehiculos) {
+            System.out.print("Placa del vehículo ("+ listaVehiculo.getClass().getSimpleName()+"): "+listaVehiculo.getPlaca()+" Marca: "+listaVehiculo.getMarca()+" Valor del peaje: "+listaVehiculo.getValorPeaje()+"\n");
+        }
         
         
     }
